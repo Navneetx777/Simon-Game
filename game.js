@@ -19,7 +19,9 @@ function sequence() {
   var randomColor = buttonColors[index];
   pattern.push(randomColor);
   buttonSounds(randomColor);
-  animation(pattern[pattern.length - 1]);
+  setTimeout(function () {
+    animation(pattern[pattern.length - 1]);
+  }, 150);
   flag = 1;
   userPattern.splice(0, userPattern.length);
   userClick();
