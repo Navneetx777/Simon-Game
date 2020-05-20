@@ -21,7 +21,7 @@ function sequence() {
   buttonSounds(randomColor);
   setTimeout(function () {
     animation(pattern[pattern.length - 1]);
-  }, 150);
+  }, 200);
   flag = 1;
   userPattern.splice(0, userPattern.length);
   userClick();
